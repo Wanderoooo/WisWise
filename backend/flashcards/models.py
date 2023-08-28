@@ -1,6 +1,6 @@
 from django.db import models
 
-class FlashCards(models.Model):
+class Flashcard(models.Model):
   deck = models.ForeignKey('Deck', on_delete=models.CASCADE)
   question = models.TextField()
   answer = models.TextField()
